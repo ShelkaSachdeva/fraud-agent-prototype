@@ -1,5 +1,15 @@
 # Autonomous Financial Risk Investigation Platform
 
+<h2 align="center">Dashboard</h2>
+
+<p align="center">
+  <img
+    src="images/dashboard.png"
+    alt="Financial Crime Investigation Dashboard"
+    width="950"
+  />
+</p>
+
 An enterprise-style **multi-agent AI system** that autonomously investigates financial transactions using specialized AI agents for **Fraud Detection, KYC, and Compliance**.
 
 This project demonstrates modern **Agentic AI architecture** where an Orchestrator coordinates multiple specialist agents while deterministic business logic performs trusted financial decisions.
