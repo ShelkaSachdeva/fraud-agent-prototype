@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Autonomous Financial Crime Investigation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Agentic AI Demonstration</p>
+                <h1>Financial Risk Investigation Center</h1>
+                <p class="subtitle">
+                    Submit one transaction. The orchestrator coordinates
+                    Fraud, KYC, and Compliance agents automatically.
+                </p>
+            </div>
+            <div class="system-status">
+                <span class="status-dot"></span>
+                Local Ollama agents online
+            </div>
+        </header>
+
+        <section class="request-panel">
+            <form id="investigation-form">
+                <label for="transaction-id">Transaction ID</label>
+                <div class="request-row">
+                    <input
+                        id="transaction-id"
+                        value="TXN-1005"
+                        required
+                        autocomplete="off"
+                    >
+                    <button id="start-button" type="submit">
+                        Start Autonomous Investigation
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="orchestration-panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Live orchestration</p>
+                    <h2>How the agents are working</h2>
+                </div>
+                <span id="overall-status" class="pill waiting">
+                    Waiting
+                </span>
+            </div>
+
+            <div class="flow">
+                <article class="agent-card" data-agent="orchestrator">
+                    <div class="agent-icon">O</div>
+                    <div class="agent-title">
+                        <h3>Orchestrator</h3>
+                        <span class="agent-status waiting">Waiting</span>
+                    </div>
+                    <p>
+                        Receives the request, resolves dependencies,
+                        and determines execution order.
+                    </p>
+                    <div class="activity">
+                        Waiting for an investigation request.
+                    </div>
+                </article>
+
+                <div class="connector">→</div>
+
+                <article class="agent-card" data-agent="fraud">
+                    <div class="agent-icon">F</div>
+                    <div class="agent-title">
+                        <h3>Fraud Agent</h3>
+                        <span class="agent-status waiting">Waiting</span>
+                    </div>
+                    <p>
+                        Evaluates amount, velocity, device, and merchant
+                        risk.
+                    </p>
+                    <div class="activity">
+                        Waiting for the orchestrator.
+                    </div>
+                </article>
+
+                <div class="connector">→</div>
+
+                <article class="agent-card" data-agent="kyc">
+                    <div class="agent-icon">K</div>
+                    <div class="agent-title">
+                        <h3>KYC Agent</h3>
+                        <span class="agent-status waiting">Waiting</span>
+                    </div>
+                    <p>
+                        Reviews identity verification, sanctions,
+                        and customer risk.
+                    </p>
+                    <div class="activity">
+                        Waiting for fraud analysis.
+                    </div>
+                </article>
+
+                <div class="connector">→</div>
+
+                <article class="agent-card" data-agent="compliance">
+                    <div class="agent-icon">C</div>
+                    <div class="agent-title">
+                        <h3>Compliance Agent</h3>
+                        <span class="agent-status waiting">Waiting</span>
+                    </div>
+                    <p>
+                        Combines fraud and KYC evidence into a governed
+                        recommendation.
+                    </p>
+                    <div class="activity">
+                        Waiting for required evidence.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="results-panel" class="results-panel hidden">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Investigation results</p>
+                    <h2>Agent evidence and recommendation</h2>
+                </div>
+            </div>
+
+            <div class="result-grid">
+                <article class="result-card">
+                    <h3>Fraud Assessment</h3>
+                    <div id="fraud-result" class="result-content">
+                        No result yet.
+                    </div>
+                </article>
+
+                <article class="result-card">
+                    <h3>KYC Assessment</h3>
+                    <div id="kyc-result" class="result-content">
+                        No result yet.
+                    </div>
+                </article>
+
+                <article class="result-card highlight">
+                    <h3>Compliance Recommendation</h3>
+                    <div id="compliance-result" class="result-content">
+                        No result yet.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="audit-panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Audit trail</p>
+                    <h2>Agent activity log</h2>
+                </div>
+                <button id="clear-log" class="secondary-button">
+                    Clear log
+                </button>
+            </div>
+            <div id="audit-log" class="audit-log">
+                <div class="log-entry muted">
+                    No investigation has started.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
