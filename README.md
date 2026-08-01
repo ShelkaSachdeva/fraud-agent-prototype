@@ -1,4 +1,4 @@
-# 🤖 Autonomous Financial Crime Investigation Platform
+# 🤖 Autonomous Financial Risk Investigation Platform
 
 An enterprise-style **multi-agent AI system** that autonomously investigates financial transactions using specialized AI agents for **Fraud Detection, KYC, and Compliance**.
 
@@ -310,7 +310,7 @@ Human Approval
 
 ✅ Agent Collaboration
 
-✅ Financial Crime Investigation
+✅ Financial Risk Investigation
 
 ✅ KYC
 
