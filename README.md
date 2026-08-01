@@ -1,4 +1,4 @@
-# 🤖 Autonomous Financial Risk Investigation Platform
+# Autonomous Financial Risk Investigation Platform
 
 An enterprise-style **multi-agent AI system** that autonomously investigates financial transactions using specialized AI agents for **Fraud Detection, KYC, and Compliance**.
 
@@ -37,7 +37,7 @@ Human Review
 
 ---
 
-# 🏗 Architecture
+# Architecture
 
 ```
                     User
@@ -68,7 +68,7 @@ Human Review
 
 ---
 
-# ✨ Features
+# Features
 
 - Autonomous Orchestrator Agent
 - Fraud Investigation Agent
@@ -86,7 +86,7 @@ Human Review
 
 ---
 
-# 🛡 Fraud Agent
+# Fraud Agent
 
 The Fraud Agent evaluates transaction behavior using explainable rules.
 
@@ -106,7 +106,7 @@ Outputs
 
 ---
 
-# 🪪 KYC Agent
+# KYC Agent
 
 The KYC Agent evaluates customer identity.
 
@@ -124,7 +124,7 @@ Outputs
 
 ---
 
-# ⚖ Compliance Agent
+# Compliance Agent
 
 The Compliance Agent combines Fraud and KYC evidence.
 
@@ -146,7 +146,7 @@ BLOCK_AND_ESCALATE
 
 ---
 
-# 🤖 Orchestrator
+# Orchestrator
 
 The Orchestrator controls the workflow.
 
@@ -160,7 +160,7 @@ Responsibilities
 
 ---
 
-# 💻 Technology Stack
+# Technology Stack
 
 Backend
 
@@ -190,7 +190,7 @@ Architecture
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```
 fraud-agent/
